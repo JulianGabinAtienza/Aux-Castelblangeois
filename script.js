@@ -17,19 +17,19 @@ burger_menu.addEventListener('click', () => {
     if (menu.style.display = 'none') {
         menu.style.display = 'flex';
         menu.style.flexDirection = 'column';
-        menu.style.justifyContent = 'start';
-        menu.style.alignItems = 'center';
         burger_menu.style.display = 'none';
-        logo.style.display = 'none';
-    } 
+        logo.style.width = '90px';
+        logo.style.height = '90px';
+    }
 });
 
-document.body.addEventListener('click', (event) => {
+document.addEventListener('click', (event) => {
     // Check if the click occurred outside of the menu
     if (!menu.contains(event.target) && event.target !== burger_menu) {
         // Hide the menu
         menu.style.display = 'none';
-        // Show the burger menu button
         burger_menu.style.display = 'block';
+        logo.style.width = '35px';
+        logo.style.height = '35px';
     }
 });
