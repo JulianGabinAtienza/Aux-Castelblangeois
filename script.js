@@ -1,11 +1,3 @@
-// HTML structure
-// <button class="burger-menu">Toggle Menu</button>
-// <ul class="menu">
-//   <li>Home</li>
-//   <li>About</li>
-//   <li>Contact</li>
-// </ul>
-
 // Get the burger menu button and the menu
 const burger_menu = document.querySelector('.burger-menu');
 const menu = document.querySelector('.menu');
