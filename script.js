@@ -9,6 +9,7 @@
 // Get the burger menu button and the menu
 const burger_menu = document.querySelector('.burger-menu');
 const menu = document.querySelector('.menu');
+const logo = document.querySelector('.logo');
 
 // Add event listener to the burger menu button
 burger_menu.addEventListener('click', () => {
@@ -16,9 +17,11 @@ burger_menu.addEventListener('click', () => {
     if (menu.style.display = 'none') {
         menu.style.display = 'flex';
         menu.style.flexDirection = 'column';
-        menu.style.justifyContent = 'center';
+        menu.style.justifyContent = 'start';
+        menu.style.alignItems = 'center';
         burger_menu.style.display = 'none';
-    }
+        logo.style.display = 'none';
+    } 
 });
 
 document.body.addEventListener('click', (event) => {
