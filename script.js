@@ -18,8 +18,15 @@ burger_menu.addEventListener('click', () => {
         menu.style.flexDirection = 'column';
         menu.style.justifyContent = 'center';
         burger_menu.style.display = 'none';
-    } else {
+    }
+});
+
+document.body.addEventListener('click', (event) => {
+    // Check if the click occurred outside of the menu
+    if (!menu.contains(event.target) && event.target !== burger_menu) {
+        // Hide the menu
         menu.style.display = 'none';
-        burger_menu.style.display = 'inline';
+        // Show the burger menu button
+        burger_menu.style.display = 'block';
     }
 });
