@@ -13,15 +13,15 @@ burger_menu.addEventListener('click', () => {
         logo.style.width = '90px';
         logo.style.height = '90px';
     }
-});
-
-document.addEventListener('click', (event) => {
-    // Check if the click occurred outside of the menu
-    if (!menu.contains(event.target) && event.target !== burger_menu) {
-        // Hide the menu
-        menu.style.display = 'none';
-        burger_menu.style.display = 'block';
-        logo.style.width = '35px';
-        logo.style.height = '35px';
-    }
+    
+    document.addEventListener('click', (event) => {
+        // Check if the click occurred outside of the menu
+        if (!menu.contains(event.target) && event.target !== burger_menu) {
+            // Hide the menu
+            menu.style.display = 'none';
+            burger_menu.style.display = 'block';
+            logo.style.width = '35px';
+            logo.style.height = '35px';
+        }
+    });
 });
